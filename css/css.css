@@ -58,4 +58,6 @@ header h2 {
         #output {
             margin-top: 25px;
             min-height: 40px;
+            opacity: 1;
+            transition: opacity 0.5s ease;
         }
