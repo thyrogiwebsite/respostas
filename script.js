@@ -14,15 +14,9 @@ function handleInput() {
     const input = inputField.value.toLowerCase().trim();
     inputField.value = "";
 
-    if (!responses.default) {
-        output.textContent = "bruh.";
-        return;
-    }
-
     output.textContent = responses[input] || responses.default;
 }
 
-// Press Enter to submit
 document.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         handleInput();
