@@ -2,9 +2,12 @@ let responses = {};
 
 fetch("answers.json")
     .then(res => res.json())
-    .then(data => responses = data)
-    .catch(() => {
-        console.error("Failed to load answers.json");
+    .then(data => {
+        responses = data;
+        console.log("Answers loaded:", responses);
+    })
+    .catch(err => {
+        console.error("Failed to load answers.json", err);
     });
 
 function handleInput() {
