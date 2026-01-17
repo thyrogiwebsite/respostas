@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Bonjour;
+    src: url(fonts/Bonjour-4Be4B.otf) format('truetype');
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-family: Bonjour, sans-serif;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 0;
+}
+header h2 {
+    font-size: 24px;
+    margin: 0;
+    color: rgb(145, 145, 145);
+}
+
+        #terminal {
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        input {
+            width: 90%;
+            background: black;
+            border: 2px solid #ffffff;
+            border-radius: 2px;
+            color: #ffffff;
+            padding: 10px;
+            font-family: monospace;
+        }
+
+        button {
+            margin-top: 10px;
+            background: black;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 15px;
+            min-height: 40px;
+        }
